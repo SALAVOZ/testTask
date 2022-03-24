@@ -1,8 +1,32 @@
-﻿@{
+﻿@model TestTask.Data.DataModels.UserModel[]
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">login</th>
+                <th scope="col">Password</th>
+                <th scope="col">Name</th>
+                <th scope="col">type_id</th>
+                <th scope="col">last_visit_date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var person in Model)
+            {
+                <tr>
+                    <td>@person.id</td>
+                    <td>@person.login</td>
+                    <td>@person.password</td>
+                    <td>@person.name</td>
+                    <td>@person.type_id</td>
+                    <td>@person.last_visit_date</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

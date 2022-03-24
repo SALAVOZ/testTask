@@ -1,0 +1,12 @@
+C:\testTask\junior\TestTask\TestTask.Data\bin\Debug\net5.0\TestTask.Data.deps.json
+C:\testTask\junior\TestTask\TestTask.Data\bin\Debug\net5.0\TestTask.Data.dll
+C:\testTask\junior\TestTask\TestTask.Data\bin\Debug\net5.0\ref\TestTask.Data.dll
+C:\testTask\junior\TestTask\TestTask.Data\bin\Debug\net5.0\TestTask.Data.pdb
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\TestTask.Data.csproj.AssemblyReference.cache
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\TestTask.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\TestTask.Data.AssemblyInfoInputs.cache
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\TestTask.Data.AssemblyInfo.cs
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\TestTask.Data.csproj.CoreCompileInputs.cache
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\TestTask.Data.dll
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\ref\TestTask.Data.dll
+C:\testTask\junior\TestTask\TestTask.Data\obj\Debug\net5.0\TestTask.Data.pdb
