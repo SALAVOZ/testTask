@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e98aa36e-9374-4e86-938e-4337c5d363e2": {
+      "ProjectGuid": "e98aa36e-9374-4e86-938e-4337c5d363e2",
+      "DisplayName": "TestTask",
+      "ColorIndex": 0
+    },
+    "b64d64c5-ddb3-4496-be82-f3a337f7dce4": {
+      "ProjectGuid": "b64d64c5-ddb3-4496-be82-f3a337f7dce4",
+      "DisplayName": "TestTask.Data",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

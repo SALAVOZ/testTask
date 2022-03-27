@@ -1,8 +1,29 @@
-﻿@model TestTask.Data.DataModels.UserModel[]
+﻿@using TestTask.Data.DataModels
+@model TestTask.Data.DataModels.UserModel[]
+@using TestTask.Helpers
 @{
-    ViewData["Title"] = "Home Page";
+    //ViewData["Title"] = "Home Page";
+    UserTypeModel[] userTypes = ViewData["userTypes"] as UserTypeModel[];
+    int selectedId = 0;
 }
+<form action="/" method="get">
+    <span>Должность:</span>
+    <select name=typeId onchange=getValueFromSelect() class="selectType" >
+        <option value="0">Все</option>
+        @foreach(var type in ViewData["userTypes"] as IEnumerable<UserTypeModel>)
+        {
+            <option value=@type.id>@type.name</option>
+        }
+    </select>
+    <span>Логин:</span>
+    <input name="login" value="" />
+    <span>Пароль:</span>
+    <input name="password" value="" />
+    <span>Name:</span>
+    <input name="name" value="" />
 
+    <span><button type="submit">Фильтр</button></span>
+</form>
 <div class="container">
     <table class="table">
         <thead>
@@ -20,13 +41,29 @@
             {
                 <tr>
                     <td>@person.id</td>
-                    <td>@person.login</td>
-                    <td>@person.password</td>
-                    <td>@person.name</td>
-                    <td>@person.type_id</td>
+                    <td><input value=@person.login /></td>
+                    <td><input value=@person.password /></td>
+                    <td><input value=@person.name /></td>
+                    <td>
+                        <select>
+                            @foreach(var type in ViewData["userTypes"] as IEnumerable<UserTypeModel>)
+                            {
+                                <option value=@type selected=@Html.Compare(@person.type_id, @type.id)>@type.name</option>
+                            }
+                        </select>
+                    </td>
                     <td>@person.last_visit_date</td>
                 </tr>
             }
         </tbody>
     </table>
+    <div style="position: fixed; bottom: 0; right: 0;" >
+        <button>Поиск</button>
+        <button>Обновить</button>
+    </div>
 </div>
+<script>
+    function getValueFromSelect() {
+        console.log( document.querySelector('.selectType').value)
+    }
+</script>

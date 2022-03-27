@@ -39,4 +39,3 @@ C:\testTask\junior\TestTask\TestTask\obj\Debug\net5.0\TestTask.dll
 C:\testTask\junior\TestTask\TestTask\obj\Debug\net5.0\ref\TestTask.dll
 C:\testTask\junior\TestTask\TestTask\obj\Debug\net5.0\TestTask.pdb
 C:\testTask\junior\TestTask\TestTask\obj\Debug\net5.0\TestTask.genruntimeconfig.cache
-C:\testTask\junior\TestTask\TestTask\bin\Debug\net5.0\Users.json

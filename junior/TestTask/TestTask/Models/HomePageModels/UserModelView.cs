@@ -17,7 +17,7 @@ namespace TestTask.Models.HomePageModels
                             string password, 
                             string name, 
                             string type_name, 
-                            string last_visit_name
+                            string last_visit_date
                             )
         {
             this.id = id;
